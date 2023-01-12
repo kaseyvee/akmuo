@@ -14,9 +14,21 @@
     font-size: 36px;
     font-weight: 500;
     margin: 0;
+
+    .user-menu {
+      display: flex;
+      position: absolute;
+      right: 1rem;
+
+      
+      a {
+        @include flex-center;
+        margin: 1rem;
+      }
+    }
   }
 
-  .menu {
+  .shop-menu {
     @include flex-center;
     height: 50px;
     background-color: $white;
