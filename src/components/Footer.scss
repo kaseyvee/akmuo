@@ -4,21 +4,57 @@
   @include flex-center;
   flex-direction: column;
   justify-content: space-around;
-  height: 100px;
   font-family: $primary-font;
 
   .footer-items {
+    @include flex-center;
+    flex-direction: row;
+    height: 50px;
+    
     a {
-      margin: 1rem;
+      @include flex-center;
+      padding-left: 1rem;
+      padding-right: 1rem;
       font-size: 16px;
       font-weight: 500;
+      height: 100%;
+      transition-duration: 200ms;
+
+      &:hover {
+        background-color: $yellow;
+        color: $white;
+      }
+    }
+  }
+
+  .socials {
+    @include flex-center;
+
+    a {
+      color: $black;
+      margin: 1rem;
+      font-size: larger;
+      
+      i {
+        transition-duration: 200ms;
+      }
+
+      &:hover i {
+        color: $yellow;
+      }
     }
   }
 
   .developer {
-    transition-duration: 200ms;
+    margin: 1rem;
+    
+    a {
+      transition-duration: 200ms;
+    }
+
     &:hover a {
       text-decoration: underline;
+      color: $yellow;
     }
   }
 }
