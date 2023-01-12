@@ -1,0 +1,15 @@
+$white: #FAF6F2;
+$black: #444444;
+$brown: #683B2B;
+$beige: #EBDABE;
+$pink: #D49E8D;
+$yellow: #B08401;
+
+$primary-font: 'Dosis', sans-serif;
+$secondary-font: 'Sofia Sans Extra Condensed', sans-serif;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
