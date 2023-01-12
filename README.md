@@ -1,6 +1,6 @@
 # AKMUO
 
-A frontend e-commerce application for AKMUO Jewelry.
+A front-end e-commerce application for AKMUO Jewelry.
 
 ## Screenshots
 
