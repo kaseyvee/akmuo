@@ -2,6 +2,9 @@
 
 .Navbar {
   font-family: $primary-font;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   
   .title {
     @include flex-center;
@@ -24,10 +27,16 @@
     margin: 0;
 
     a {
-      margin-left: 1rem;
-      margin-right: 1rem;
-      text-decoration: none;
-      color: inherit;
+      @include flex-center;
+      height: 100%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      transition-duration: 200ms;
+
+      &:hover {
+        background-color: $yellow;
+        color: $white;
+      }
     }
   }
 }

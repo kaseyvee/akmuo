@@ -1,5 +1,6 @@
 import Feature from "./components/Feature";
 import Navbar from "./components/Navbar";
+import "./App.scss";
 
 function App() {
   return (

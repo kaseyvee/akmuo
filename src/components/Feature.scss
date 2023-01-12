@@ -1,0 +1,38 @@
+@import '../variables.scss';
+
+.Feature {
+  background: url("https://i.imgur.com/Yt5yclT.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  
+  @include flex-center;
+  flex-direction: column;
+  font-family: $secondary-font;
+  color: $white;
+  font-weight: bold;
+  transition-duration: 200ms;
+
+  
+  &:hover {
+    filter: grayscale(60%);
+  }
+
+  .header {
+    font-size: 64px;
+    margin: 1rem;
+  }
+  
+  .btn {
+    font-size: 15px;
+    border: 2px solid $white;
+    padding: 1rem;
+    transition-duration: 200ms;
+
+    &:hover {
+      border: 2px solid $brown;
+      background-color: $brown;
+      color: $white;
+    }
+  }
+}
