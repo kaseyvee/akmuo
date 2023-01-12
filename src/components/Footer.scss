@@ -1,0 +1,24 @@
+@import "../variables.scss";
+
+.Footer {
+  @include flex-center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100px;
+  font-family: $primary-font;
+
+  .footer-items {
+    a {
+      margin: 1rem;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  .developer {
+    transition-duration: 200ms;
+    &:hover a {
+      text-decoration: underline;
+    }
+  }
+}

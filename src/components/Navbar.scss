@@ -1,4 +1,4 @@
-@import '../variables.scss';
+@import "../variables.scss";
 
 .Navbar {
   font-family: $primary-font;
@@ -20,7 +20,6 @@
       position: absolute;
       right: 1rem;
 
-      
       a {
         @include flex-center;
         margin: 1rem;
