@@ -7,7 +7,7 @@ const database = [
     categories: ["chunky", "minimalist", "new arrival"],
     photos: ["https://i.imgur.com/YY9kCyW.png", "https://i.imgur.com/E5HOYa2.png"],
     size: "S",
-    price: 1200,
+    price: 12,
     sale: false,
     salePrice: null
   },
@@ -19,7 +19,7 @@ const database = [
     categories: ["chunky", "minimalist"],
     photos: ["https://i.imgur.com/E5HOYa2.png"],
     size: "S",
-    price: 1000,
+    price: 10,
     sale: false,
     salePrice: null
   },
@@ -31,7 +31,7 @@ const database = [
     categories: ["chunky", "minimalist"],
     photos: ["https://i.imgur.com/rv030lH.png"],
     size: "S",
-    price: 1200,
+    price: 12,
     sale: false,
     salePrice: null
   },
@@ -43,7 +43,7 @@ const database = [
     categories: ["chunky", "minimalist", "new arrival"],
     photos: ["https://i.imgur.com/W2QEm9P.png"],
     size: "S",
-    price: 1200,
+    price: 12,
     sale: false,
     salePrice: null
   },
@@ -55,9 +55,9 @@ const database = [
     categories: ["chunky", "fun"],
     photos: ["https://i.imgur.com/xXYzHaW.png"],
     size: "S",
-    price: 1000,
+    price: 10,
     sale: true,
-    salePrice: 700
+    salePrice: 7
   }
 ];
 
