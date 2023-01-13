@@ -1,8 +1,8 @@
-import './Feature.scss';
+import './FeatureRedirect.scss';
 
-export default function Feature() {
+export default function FeatureRedirect() {
   return (
-    <section className='Feature'>
+    <section className='FeatureRedirect'>
       <div className='text'>
         <div className='header'>Spring is coming.</div>
         <a href="" className='btn'>SHOP NEW ARRIVALS</a>

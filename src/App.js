@@ -1,13 +1,15 @@
-import Feature from "./components/Feature";
 import Navbar from "./components/Navbar";
 import "./App.scss";
 import Footer from "./components/Footer";
+import FeatureRedirect from "./components/FeatureRedirect";
+import FeatureItems from "./components/FeatureItems";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Feature />
+      <FeatureRedirect />
+      <FeatureItems />
       <Footer />
     </div>
   );
