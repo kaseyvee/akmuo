@@ -8,6 +8,7 @@ export default function FeatureItems() {
     return (
       <CardItem
         key={item.id}
+        id={item.id}
         photo={item.photos[0]}
         name={item.name}
         price={item.price}
@@ -29,9 +30,9 @@ export default function FeatureItems() {
     <section className="FeatureItems">
       <div className="feature-title">shop chunkies</div>
       <div id='feature-scroll'>
-        <i class="fa-solid fa-angle-left" onClick={handleScrollLeft}></i>
+        <i className="fa-solid fa-angle-left" onClick={handleScrollLeft}></i>
         {items}
-        <i class="fa-solid fa-angle-right" onClick={handleScrollRight}></i>
+        <i className="fa-solid fa-angle-right" onClick={handleScrollRight}></i>
       </div>
     </section>
   );

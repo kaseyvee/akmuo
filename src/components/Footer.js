@@ -10,8 +10,8 @@ export default function Footer() {
         <a href=''>policies</a>
       </div>
       <div className='socials'>
-        <a href='https://www.instagram.com/akmuo.jewelry/' target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-instagram"></i></a>
-        <a href='https://www.tiktok.com/@akmuo.jewelry' target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-tiktok"></i></a>
+        <a href='https://www.instagram.com/akmuo.jewelry/' target="_blank" rel="noreferrer noopener"><i className="fa-brands fa-instagram"></i></a>
+        <a href='https://www.tiktok.com/@akmuo.jewelry' target="_blank" rel="noreferrer noopener"><i className="fa-brands fa-tiktok"></i></a>
       </div>
       <div className='developer'>designed by <a href='https://github.com/kaseyvee/akmuo' target="_blank" rel="noreferrer noopener">kasey</a></div>
     </footer>

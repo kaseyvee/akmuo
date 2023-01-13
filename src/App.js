@@ -3,6 +3,7 @@ import "./App.scss";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import LandingPage from './components/LandingPage';
+import ViewItem from './components/ViewItem';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<LandingPage />} />
+          <Route path='/:id' element={<ViewItem />} />
         </Routes>
         <Footer />
       </div>

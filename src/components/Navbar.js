@@ -1,10 +1,11 @@
 import './Navbar.scss';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
     <nav className="Navbar">
       <div className='title'>
-        AKMUO
+        <Link to="/">AKMUO</Link>
         <div className='user-menu'>
           <a href=''><img src='https://i.imgur.com/KhgjqEF.png' alt='search icon' /></a>
           <a href=''><img src='https://i.imgur.com/BHaQJi1.png' alt='current user' /></a>

@@ -1,12 +1,12 @@
 const database = [
   {
     id: 1,
-    name: "marble caramel",
+    name: "marble toffee",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl vel pretium lectus quam.",
     variations: ["round", "diamond", "boxy"],
     categories: ["chunky", "minimalist", "new arrival"],
     photos: ["https://i.imgur.com/YY9kCyW.png", "https://i.imgur.com/E5HOYa2.png"],
-    size: "S",
+    size: 19,
     price: 12,
     sale: false,
     salePrice: null
@@ -18,7 +18,7 @@ const database = [
     variations: ["small", "round", "boxy", "geometric"],
     categories: ["chunky", "minimalist"],
     photos: ["https://i.imgur.com/E5HOYa2.png"],
-    size: "S",
+    size: 14,
     price: 10,
     sale: false,
     salePrice: null
@@ -30,7 +30,7 @@ const database = [
     variations: ["onyx", "amber", "ivory"],
     categories: ["chunky", "minimalist"],
     photos: ["https://i.imgur.com/rv030lH.png"],
-    size: "S",
+    size: 19,
     price: 12,
     sale: false,
     salePrice: null
@@ -42,7 +42,7 @@ const database = [
     variations: ["emerald", "ochre", "ivory", "pearl"],
     categories: ["chunky", "minimalist", "new arrival"],
     photos: ["https://i.imgur.com/W2QEm9P.png"],
-    size: "S",
+    size: 18,
     price: 12,
     sale: false,
     salePrice: null
@@ -54,7 +54,7 @@ const database = [
     variations: ["baby blue"],
     categories: ["chunky", "fun"],
     photos: ["https://i.imgur.com/xXYzHaW.png"],
-    size: "S",
+    size: 19,
     price: 10,
     sale: true,
     salePrice: 7
@@ -66,7 +66,7 @@ const database = [
     variations: ["round", "diamond", "boxy"],
     categories: ["chunky", "minimalist", "new arrival"],
     photos: ["https://i.imgur.com/YY9kCyW.png", "https://i.imgur.com/E5HOYa2.png"],
-    size: "S",
+    size: 19,
     price: 12,
     sale: false,
     salePrice: null
@@ -78,7 +78,7 @@ const database = [
     variations: ["small", "round", "boxy", "geometric"],
     categories: ["chunky", "minimalist"],
     photos: ["https://i.imgur.com/E5HOYa2.png"],
-    size: "S",
+    size: 22,
     price: 10,
     sale: false,
     salePrice: null
@@ -90,7 +90,7 @@ const database = [
     variations: ["onyx", "amber", "ivory"],
     categories: ["chunky", "minimalist"],
     photos: ["https://i.imgur.com/rv030lH.png"],
-    size: "S",
+    size: 17,
     price: 12,
     sale: false,
     salePrice: null
@@ -102,7 +102,7 @@ const database = [
     variations: ["emerald", "ochre", "ivory", "pearl"],
     categories: ["chunky", "minimalist", "new arrival"],
     photos: ["https://i.imgur.com/W2QEm9P.png"],
-    size: "S",
+    size: 16,
     price: 12,
     sale: false,
     salePrice: null
@@ -114,7 +114,7 @@ const database = [
     variations: ["baby blue"],
     categories: ["chunky", "fun"],
     photos: ["https://i.imgur.com/xXYzHaW.png"],
-    size: "S",
+    size: 20,
     price: 10,
     sale: true,
     salePrice: 7
@@ -126,7 +126,7 @@ const database = [
     variations: ["round", "diamond", "boxy"],
     categories: ["chunky", "minimalist", "new arrival"],
     photos: ["https://i.imgur.com/YY9kCyW.png", "https://i.imgur.com/E5HOYa2.png"],
-    size: "S",
+    size: 22,
     price: 12,
     sale: false,
     salePrice: null
@@ -138,7 +138,7 @@ const database = [
     variations: ["small", "round", "boxy", "geometric"],
     categories: ["chunky", "minimalist"],
     photos: ["https://i.imgur.com/E5HOYa2.png"],
-    size: "S",
+    size: 15,
     price: 10,
     sale: false,
     salePrice: null
@@ -150,7 +150,7 @@ const database = [
     variations: ["onyx", "amber", "ivory"],
     categories: ["chunky", "minimalist"],
     photos: ["https://i.imgur.com/rv030lH.png"],
-    size: "S",
+    size: 17,
     price: 12,
     sale: false,
     salePrice: null
@@ -162,7 +162,7 @@ const database = [
     variations: ["emerald", "ochre", "ivory", "pearl"],
     categories: ["chunky", "minimalist", "new arrival"],
     photos: ["https://i.imgur.com/W2QEm9P.png"],
-    size: "S",
+    size: 16,
     price: 12,
     sale: false,
     salePrice: null
@@ -174,7 +174,7 @@ const database = [
     variations: ["baby blue"],
     categories: ["chunky", "fun"],
     photos: ["https://i.imgur.com/xXYzHaW.png"],
-    size: "S",
+    size: 18,
     price: 10,
     sale: true,
     salePrice: 7
