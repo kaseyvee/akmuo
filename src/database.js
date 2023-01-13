@@ -26,7 +26,7 @@ const database = [
   {
     id: 3,
     name: "old smokey",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl vel pretium lectus quam.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Pharetra et ultrices neque ornare. Vivamus at augue eget arcu dictum varius duis at consectetur.",
     variations: ["onyx", "amber", "ivory"],
     categories: ["chunky", "minimalist"],
     photos: ["https://i.imgur.com/rv030lH.png"],
