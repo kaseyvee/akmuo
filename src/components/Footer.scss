@@ -6,6 +6,7 @@
   justify-content: space-around;
   font-family: $primary-font;
   background-color: $beige;
+  margin-top: 2rem;
 
   .footer-items {
     @include flex-center;

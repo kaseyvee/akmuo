@@ -2,7 +2,7 @@ const database = [
   {
     id: 1,
     name: "marble toffee",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl vel pretium lectus quam.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Pharetra et ultrices neque ornare. Vivamus at augue eget arcu dictum varius duis at consectetur.",
     variations: ["round", "diamond", "boxy"],
     categories: ["chunky", "minimalist", "new arrival"],
     photos: ["https://i.imgur.com/YY9kCyW.png", "https://i.imgur.com/E5HOYa2.png"],

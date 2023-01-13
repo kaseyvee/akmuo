@@ -1,5 +1,95 @@
 @import "../../variables.scss";
 
 .ViewItem {
+  @include flex-center;
+  flex-direction: column;
+  font-family: $secondary-font;
+
+  .view-top {
+    @include flex-center;
+    gap: 1rem;
+    margin: 3rem;
+    color: $black;
+
+    img {
+      width: 30vw;
+    }
+
+    .main-info {
+      @include flex-center;
+      flex-direction: column;
+      margin: 30px;
+
+      h1, p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+    }
+
+    .styles {
+      @include flex-center;
+      flex-direction: column;
+      margin: 30px;
+
+      .styles-list {
+        display: flex;
+        gap: 1rem;
+        margin-top: 0.5rem;
+
+        .VariationItem {
+          border: 2px solid $black;
+          padding: 0.5rem 1rem 0.5rem 1rem;
+          font-weight: bold
+        }
+      }
+    }
+
+    .actions {
+      @include flex-center;
+      flex-direction: column;
+      margin: 30px;
+
+      button, p {
+        margin: 0.25rem;
+      }
+
+      button {
+        border: 0;
+        color: $white;
+        background-color: $black;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 1rem;
+        width: 100%;
+      }
+
+      p {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .view-bottom {
+    @include flex-center;
+    flex-direction: column;
+    width: 60vw;
+
+    .categories {
+      display: flex;
+
+      .CategoryItem {
+        border-radius: 30px;
+        background-color: $black;
+        color: $white;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0.5rem 1.5rem;
+        margin: 1rem;
+      }
+    }
+  }
 
 }
