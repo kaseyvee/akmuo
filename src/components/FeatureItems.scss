@@ -3,12 +3,13 @@
 .FeatureItems {
   margin: 1rem 0 1rem 0;
 
-  .feature-scroll {
+  #feature-scroll {
     display: flex;
     flex-direction: row;
     align-items: center;
     overflow-x: scroll;
     scroll-snap-type: proximity;
+    scroll-behavior: smooth;
 
     i {
       @include flex-center;
