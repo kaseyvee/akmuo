@@ -1,10 +1,24 @@
 @import "../variables.scss";
 
 .card-item {
-  height: 500px;
+  height: fit-content;
   margin: 1rem;
-
+  
+  &:hover img {
+    filter: brightness(80%);
+  }
+  
   img {
-    height: 250px;
+    height: 270px;
+    margin-bottom: 0.5rem;
+    transition-duration: 200ms;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .item-name {
+    font-weight: 600;
   }
 }

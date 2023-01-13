@@ -17,7 +17,7 @@ export default function FeatureItems() {
 
   return (
     <section className="FeatureItems">
-      <div>shop chunkies</div>
+      <div className="feature-title">shop chunkies</div>
       <div className='feature-scroll'>
         {items}
       </div>
