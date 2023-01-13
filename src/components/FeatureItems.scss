@@ -1,12 +1,45 @@
 @import "../variables.scss";
 
 .FeatureItems {
+  margin: 1rem 0 1rem 0;
 
   .feature-scroll {
     display: flex;
     flex-direction: row;
+    align-items: center;
     overflow-x: scroll;
-  
+    scroll-snap-type: proximity;
+
+    i {
+      @include flex-center;
+      position: absolute;
+      background-color: $white;
+      height: 2.5rem;
+      width: 2.5rem;
+      font-size: 2rem;
+      color: $black;
+      border-radius: 50px;
+      filter: opacity(70%);
+      transition-duration: 200ms;
+      z-index: 1;
+
+      &:hover {
+        filter: opacity(100%);
+      }
+    }
+
+    .fa-angle-left {
+      left: 2rem;
+    }
+
+    .fa-angle-right {
+      right: 2rem;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    background-color: transparent;
+    width: 15px;
   }
   
   .feature-title {

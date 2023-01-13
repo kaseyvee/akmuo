@@ -19,7 +19,9 @@ export default function FeatureItems() {
     <section className="FeatureItems">
       <div className="feature-title">shop chunkies</div>
       <div className='feature-scroll'>
+        <i class="fa-solid fa-angle-left"></i>
         {items}
+        <i class="fa-solid fa-angle-right"></i>
       </div>
     </section>
   );
