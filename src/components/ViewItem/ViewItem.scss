@@ -12,7 +12,11 @@
     color: $black;
 
     img {
-      width: 30vw;
+      width: 25vw;
+    }
+
+    &-right {
+      min-width: 25vw;
     }
 
     .main-info {
@@ -35,9 +39,11 @@
       margin: 30px;
 
       .styles-list {
-        display: flex;
+        @include flex-center;
+        flex-wrap: wrap;
         gap: 1rem;
         margin-top: 0.5rem;
+        max-width: 25vw;
 
         .VariationItem {
           border: 2px solid $black;
@@ -75,7 +81,7 @@
   .view-bottom {
     @include flex-center;
     flex-direction: column;
-    width: 60vw;
+    width: 50vw;
 
     .categories {
       display: flex;

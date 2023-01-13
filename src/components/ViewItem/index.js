@@ -14,6 +14,7 @@ function ViewItem() {
   const styles = currentItem.variations.map(variation => {
     return (
       <VariationItem
+        key={currentItem.variations.indexOf(variation)}
         variation={variation}
       />
     )
@@ -22,6 +23,7 @@ function ViewItem() {
   const categories = currentItem.categories.map(category => {
     return (
       <CategoryItem
+        key={currentItem.categories.indexOf(category)}
         category={category}
       />
     )
@@ -37,38 +39,29 @@ function ViewItem() {
             {/* add carousel */}
           </div>
           <div className="view-top-right">
-
             <div className="main-info">
               <h1>{currentItem.name}</h1>
               <p>size {currentItem.size}mm</p>
               <p>${currentItem.price.toFixed(2)}</p>
             </div>
-
             <div className="styles">
               styles:
               <div className="styles-list">{styles}</div>
             </div>
-
             <div className="actions">
               <p className="size-chart">find your size</p>
               <button>ADD TO BAG</button>
             </div>
-
           </div>
         </div>
-
-
         <div className="view-bottom">
-
           <div>
             description:
             <p>{currentItem.description}</p>
           </div>
-
           <div className="categories">
             {categories}
           </div>
-
         </div>
       </div>
     </>

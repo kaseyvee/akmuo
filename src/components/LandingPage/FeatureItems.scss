@@ -8,7 +8,7 @@
     flex-direction: row;
     align-items: center;
     overflow-x: scroll;
-    scroll-snap-type: proximity;
+    scroll-snap-type: x proximity;
     scroll-behavior: smooth;
 
     i {
