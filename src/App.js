@@ -1,17 +1,20 @@
-import Navbar from "./components/Navbar";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import "./App.scss";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import FeatureRedirect from "./components/FeatureRedirect";
-import FeatureItems from "./components/FeatureItems";
+import LandingPage from './components/LandingPage';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <FeatureRedirect />
-      <FeatureItems />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<LandingPage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

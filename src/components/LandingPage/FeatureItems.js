@@ -1,6 +1,6 @@
 import "./FeatureItems.scss";
-import CardItem from "./CardItem";
-import database from "../database";
+import CardItem from "../CardItem";
+import database from "../../database";
 
 export default function FeatureItems() {
 
