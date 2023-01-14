@@ -1,13 +1,14 @@
 import './Footer.scss';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
     <footer className="Footer">
       <div className='footer-items'>
-        <a href=''>contact</a>
-        <a href=''>faq</a>
-        <a href=''>about us</a>
-        <a href=''>policies</a>
+        <Link to='/contact'>contact</Link>
+        <Link to='/faq'>faq</Link>
+        <Link to='/about-us'>about us</Link>
+        <Link to='/policies'>policies</Link>
       </div>
       <div className='socials'>
         <a href='https://www.instagram.com/akmuo.jewelry/' target="_blank" rel="noreferrer noopener"><i className="fa-brands fa-instagram"></i></a>

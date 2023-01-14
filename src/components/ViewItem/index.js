@@ -32,7 +32,7 @@ function ViewItem() {
   return (
     <>
       <Spacer />
-      <div className="ViewItem">
+      <section className="ViewItem">
         <div className="view-top">
           <div className="preview">
             <img src={currentItem.photos[0]} alt=""/>
@@ -63,7 +63,7 @@ function ViewItem() {
             {categories}
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

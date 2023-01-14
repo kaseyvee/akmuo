@@ -32,10 +32,10 @@ export default function Navbar() {
             {categoryList}
           </div>
         </div>
-        <a href=''>new arrivals</a>
-        <a href=''>best sellers</a>
-        <a href=''>sale</a>
-        <a href=''>about us</a>
+        <Link to='/new-arrivals'>new arrivals</Link>
+        <Link to='/best-sellers'>best sellers</Link>
+        <Link to='/sale'>sale</Link>
+        <Link to='/about-us'>about us</Link>
       </div>
     </nav>
   );

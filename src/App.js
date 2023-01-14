@@ -3,6 +3,7 @@ import "./App.scss";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import LandingPage from './components/LandingPage';
+import ViewCategory from './components/ViewCategory';
 import ViewItem from './components/ViewItem';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<LandingPage />} />
+          <Route path='/:category' element={<ViewCategory />} />
           <Route path='/:id' element={<ViewItem />} />
         </Routes>
         <Footer />
