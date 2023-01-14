@@ -1,10 +1,13 @@
 import "./FeatureItems.scss";
 import CardItem from "../CardItem";
-import database from "../../database";
+import { database } from "../../database";
+import { getItemsByCategory } from "../../selectors";
 
 export default function FeatureItems() {
 
-  const items = database.map((item) => {
+  const currentFeature = getItemsByCategory(database, "chunky")
+
+  const items = currentFeature.map((item) => {
     return (
       <CardItem
         key={item.id}

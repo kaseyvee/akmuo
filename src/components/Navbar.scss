@@ -49,5 +49,36 @@
         color: $white;
       }
     }
+
+    .dropdown {
+      position: relative;
+      height: 100%;
+
+      &:hover .dropdown-list {
+        display: block;
+      }
+
+      .dropdown-list {
+        @include flex-center;
+        flex-direction: column;
+        position: absolute;
+        display: none;
+        background-color: $white;
+        color: $black;
+
+        a {
+          padding: 1rem 2rem;
+
+          &:hover {
+            background-color: $yellow;
+            color: white;
+          }
+        }
+      }
+    }
+    
+
+
   }
+
 }

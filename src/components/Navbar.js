@@ -1,7 +1,20 @@
 import './Navbar.scss';
 import { Link } from 'react-router-dom';
+import { categories } from '../database';
 
 export default function Navbar() {
+
+  const categoryList = categories.map(category => {
+    return (
+      <Link
+        key={categories.indexOf(category)}
+        to={`/${category}`}
+      >
+        {category}
+      </Link>
+    )
+  })
+
   return (
     <nav className="Navbar">
       <div className='title'>
@@ -13,7 +26,12 @@ export default function Navbar() {
         </div>
       </div>
       <div className='shop-menu'>
-        <a href=''>shop all</a>
+        <div className='dropdown'>
+          <a href='' className='shop-all'>shop all</a>
+          <div className='dropdown-list'>
+            {categoryList}
+          </div>
+        </div>
         <a href=''>new arrivals</a>
         <a href=''>best sellers</a>
         <a href=''>sale</a>

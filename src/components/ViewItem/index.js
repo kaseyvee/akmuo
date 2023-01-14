@@ -1,7 +1,7 @@
 import "./ViewItem.scss";
 import { useParams } from "react-router-dom";
-import database from "../../database";
-import getItemById from "../../selectors";
+import { database } from "../../database";
+import { getItemById } from "../../selectors";
 import Spacer from "../Spacer";
 import CategoryItem from "./CategoryItem";
 import VariationItem from "./VariationItem";
