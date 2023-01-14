@@ -1,4 +1,4 @@
-// import './ViewCategory.scss';
+import './ViewCategory.scss';
 import { useParams } from 'react-router-dom';
 import { getItemsByCategory } from '../../selectors';
 import { database } from '../../database';
@@ -7,7 +7,20 @@ import CardItem from '../CardItem';
 
 export default function ViewCategory() {
   const { category } = useParams();
-  const currentItems = getItemsByCategory(database, category);
+
+  function fixCategoryName(category) {
+    let fixedName = "";
+    for (let char of category) {
+      if (char === "-") {
+        fixedName += " ";
+      } else {
+        fixedName += char;
+      }
+    }
+    return fixedName;
+  }
+
+  const currentItems = getItemsByCategory(database, fixCategoryName(category));
 
   const items = currentItems.map((item) => {
     return (
@@ -26,10 +39,16 @@ export default function ViewCategory() {
       <Spacer />
       <section className="ViewCategory">
         <div className='filters'>
-          
+          <h1>filters</h1>
+          <div>sort by</div>
+          <div>size</div>
+          <div>colour</div>
         </div>
-        <div className='items-list'>
-          {items}
+        <div className='items'>
+          <h1>{fixCategoryName(category)}</h1>
+          <div className='items-list'>
+            {items}
+          </div>
         </div>
       </section>
     </>

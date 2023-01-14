@@ -1,0 +1,26 @@
+@import "../../variables.scss";
+
+.ViewCategory {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0 1rem 0;
+
+  .filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+  }
+  
+  .items {
+    h1 {
+      text-align: center
+    }
+
+    .items-list {
+      @include flex-center;
+      flex-wrap: wrap;
+      width: 80vw;
+    }
+  }
+}

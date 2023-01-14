@@ -8,7 +8,7 @@ export default function Navbar() {
     return (
       <Link
         key={categories.indexOf(category)}
-        to={`/${category}`}
+        to={`/category/${category}`}
       >
         {category}
       </Link>
@@ -32,8 +32,8 @@ export default function Navbar() {
             {categoryList}
           </div>
         </div>
-        <Link to='/new-arrivals'>new arrivals</Link>
-        <Link to='/best-sellers'>best sellers</Link>
+        <Link to='/category/new-arrivals'>new arrivals</Link>
+        <Link to='/category/best-sellers'>best sellers</Link>
         <Link to='/sale'>sale</Link>
         <Link to='/about-us'>about us</Link>
       </div>

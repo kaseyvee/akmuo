@@ -13,8 +13,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<LandingPage />} />
-          <Route path='/:category' element={<ViewCategory />} />
           <Route path='/:id' element={<ViewItem />} />
+          <Route path='/category/:category' element={<ViewCategory />} />
         </Routes>
         <Footer />
       </div>

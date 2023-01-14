@@ -6,7 +6,7 @@ export default function FeatureRedirect() {
     <section className='FeatureRedirect'>
       <div className='text'>
         <div className='header'>Spring is coming.</div>
-        <Link to="/new-arrivals" className='btn'>SHOP NEW ARRIVALS</Link>
+        <Link to="/category/new-arrivals" className='btn'>SHOP NEW ARRIVALS</Link>
       </div>
       <img src='https://i.imgur.com/Yt5yclT.png' alt='rings in sunlight' />
     </section>
