@@ -27,14 +27,14 @@ export default function Navbar() {
       </div>
       <div className='shop-menu'>
         <div className='dropdown'>
-          <a href='' className='shop-all'>shop all</a>
+          <Link to='/category/shop-all'>shop all</Link>
           <div className='dropdown-list'>
             {categoryList}
           </div>
         </div>
         <Link to='/category/new-arrivals'>new arrivals</Link>
         <Link to='/category/best-sellers'>best sellers</Link>
-        <Link to='/sale'>sale</Link>
+        <Link to='/category/sale'>sale</Link>
         <Link to='/about-us'>about us</Link>
       </div>
     </nav>

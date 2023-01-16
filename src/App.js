@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import LandingPage from './components/LandingPage';
 import ViewCategory from './components/ViewCategory';
 import ViewItem from './components/ViewItem';
+import AboutUs from './components/AboutUs';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/' element={<LandingPage />} />
           <Route path='/:id' element={<ViewItem />} />
           <Route path='/category/:category' element={<ViewCategory />} />
+          <Route path='/about-us' element={<AboutUs />} />
         </Routes>
         <Footer />
       </div>

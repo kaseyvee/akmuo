@@ -22,17 +22,47 @@ export default function ViewCategory() {
 
   const currentItems = getItemsByCategory(database, fixCategoryName(category));
 
-  const items = currentItems.map((item) => {
-    return (
-      <CardItem
-        key={item.id}
-        id={item.id}
-        photo={item.photos[0]}
-        name={item.name}
-        price={item.price}
-      />
-    )
-  });
+  function items() {
+    if (category === "shop-all") {
+      const items = database.map((item) => {
+        return (
+          <CardItem
+            key={item.id}
+            id={item.id}
+            photo={item.photos[0]}
+            name={item.name}
+            price={item.price}
+          />
+        )
+      });
+      return items;
+    } else {
+      const items = currentItems.map((item) => {
+        return (
+          <CardItem
+            key={item.id}
+            id={item.id}
+            photo={item.photos[0]}
+            name={item.name}
+            price={item.price}
+          />
+        )
+      });
+      return items;
+    }
+  }
+
+  // const items = currentItems.map((item) => {
+  //   return (
+  //     <CardItem
+  //       key={item.id}
+  //       id={item.id}
+  //       photo={item.photos[0]}
+  //       name={item.name}
+  //       price={item.price}
+  //     />
+  //   )
+  // });
 
   return (
     <>
@@ -47,7 +77,7 @@ export default function ViewCategory() {
         <div className='items'>
           <h1>{fixCategoryName(category)}</h1>
           <div className='items-list'>
-            {items}
+            {items()}
           </div>
         </div>
       </section>

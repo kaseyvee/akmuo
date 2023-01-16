@@ -193,6 +193,19 @@ export const database = [
     price: 10,
     sale: true,
     salePrice: 7
+  },
+  {
+    id: 16,
+    name: "shop all test",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl vel pretium lectus quam.",
+    type: "ring",
+    variations: ["baby blue"],
+    categories: ["chunky", "fun"],
+    photos: ["https://i.imgur.com/xXYzHaW.png"],
+    size: 18,
+    price: 10,
+    sale: true,
+    salePrice: 7
   }
 ];
 
